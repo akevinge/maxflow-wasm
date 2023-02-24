@@ -2,7 +2,7 @@
 
 ## Build
 
-`sh
+```sh
 docker build -t maxflow-wasm . &&
 docker run -d -v ${PWD}:/usr/src/maxflow-wasm maxflow-wasm
-`
+```
