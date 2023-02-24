@@ -1,0 +1,17 @@
+[package]
+name = "maxflow-wasm"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+serde-wasm-bindgen = "0.4"
+rs-graph = { git = "https://github.com/thekevinge/rs-graph.git" }
+serde = { version = "1", features = ["derive"] }
+console_error_panic_hook = "0.1.7"
+
+[profile.release]
+opt-level = 3
